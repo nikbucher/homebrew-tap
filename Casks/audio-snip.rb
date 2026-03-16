@@ -1,6 +1,9 @@
 cask "audio-snip" do
+  name "AudioSnip"
+  desc "Extract audio from video files using FFmpeg"
+  homepage "https://github.com/nikbucher/audio-snip"
   version "0.4.1"
-  license "MIT"
+  # license "MIT"
 
   on_arm do
     sha256 "c4fd80055f6afbb9e4783cc95d888cfc0171c993d7d84c4ba6e746a10b981701"
@@ -11,10 +14,6 @@ cask "audio-snip" do
     sha256 "8d26930b2bfc8d5362510e75ece74e8863555a84387bb25f4b776728774945e7"
     url "https://github.com/nikbucher/audio-snip/releases/download/v#{version}/AudioSnip_#{version}_x64.dmg"
   end
-
-  name "AudioSnip"
-  desc "Extract audio from video files using FFmpeg"
-  homepage "https://github.com/nikbucher/audio-snip"
 
   depends_on formula: "ffmpeg"
 
