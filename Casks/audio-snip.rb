@@ -1,5 +1,6 @@
 cask "audio-snip" do
   version "0.4.1"
+  license "MIT"
 
   on_arm do
     sha256 "c4fd80055f6afbb9e4783cc95d888cfc0171c993d7d84c4ba6e746a10b981701"
