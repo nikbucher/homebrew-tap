@@ -1,6 +1,6 @@
 # nikbucher's Homebrew Tap
 
-Homebrew tap for my CLI tools.
+Homebrew tap for my CLI tools and macOS apps.
 
 ## Install
 
@@ -11,7 +11,11 @@ brew tap nikbucher/tap
 ## Install Packages
 
 ```bash
+# formula
 brew install nikbucher/tap/<name>
+
+# cask
+brew install --cask nikbucher/tap/<name>
 ```
 
 ## Packages
@@ -20,6 +24,10 @@ brew install nikbucher/tap/<name>
 
 - `konzertmeister-cli` — CLI for the Konzertmeister API — manage appointments for music groups
 
+### Casks
+
+- `audio-snip` — Extract audio from video files using FFmpeg
+
 ## Update / Uninstall
 
 ```bash
@@ -27,6 +35,7 @@ brew update
 brew upgrade
 
 brew uninstall <formula>
+brew uninstall --cask <cask>
 ```
 
 ## Notes
