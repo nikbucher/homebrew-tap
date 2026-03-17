@@ -1,13 +1,13 @@
 cask "audio-snip" do
-  version "0.4.2"
+  version "0.5.0"
 
   on_arm do
-    sha256 "a5a869a14f6a43fb8cf76625409eb8bfb7dfffc50eaa9b9454d9b8d6961f77d7"
+    sha256 "eeb2f68b7f0656e37a9fd70a914962ae46af57620c3bb0c0665f266b26c983be"
     url "https://github.com/nikbucher/audio-snip/releases/download/v#{version}/AudioSnip_#{version}_aarch64.dmg"
   end
 
   on_intel do
-    sha256 "a6aeb8e02eb2ddb35a24489694ba3ef2cb7164a9f54b7d7bd40056848fcec4f7"
+    sha256 "c55cd6e5b2e5e561951202994e5d9dcea239fa7a27756838ef3075401189fd54"
     url "https://github.com/nikbucher/audio-snip/releases/download/v#{version}/AudioSnip_#{version}_x64.dmg"
   end
 
