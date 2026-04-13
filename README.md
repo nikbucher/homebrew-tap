@@ -22,12 +22,12 @@ brew install --cask nikbucher/tap/<name>
 
 ### Formulae
 
-- `idgen` — CLI tool for generating random NanoID-style identifiers
-- `konzertmeister-cli` — CLI for the Konzertmeister API — manage appointments for music groups
+- [`idgen`](https://github.com/nikbucher/idgen) — CLI tool for generating random NanoID-style identifiers
+- [`konzertmeister-cli`](https://github.com/nikbucher/konzertmeister-cli) — CLI for the Konzertmeister API — manage appointments for music groups
 
 ### Casks
 
-- `audio-snip` — Extract audio from video files using FFmpeg
+- [`audio-snip`](https://github.com/nikbucher/audio-snip) — Extract audio from video files using FFmpeg
 
 ## Update / Uninstall
 
