@@ -1,5 +1,5 @@
 class Idgen < Formula
-  desc "CLI for generating random identifiers with customizable alphabets and block formatting"
+  desc "Fast, minimal CLI for generating random IDs with customizable alphabets and ambiguity-safe options"
   homepage "https://github.com/nikbucher/idgen"
   version "0.2.0"
   license "MIT"

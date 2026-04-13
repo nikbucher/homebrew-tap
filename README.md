@@ -22,6 +22,7 @@ brew install --cask nikbucher/tap/<name>
 
 ### Formulae
 
+- `idgen` — CLI tool for generating random NanoID-style identifiers
 - `konzertmeister-cli` — CLI for the Konzertmeister API — manage appointments for music groups
 
 ### Casks
