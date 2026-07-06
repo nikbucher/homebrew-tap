@@ -22,6 +22,7 @@ brew install --cask nikbucher/tap/<name>
 
 ### Formulae
 
+- [`clockify-to-solidtime`](https://github.com/nikbucher/clockify-to-solidtime) — CLI tool to migrate time tracking data (clients, projects, time entries, tags) from Clockify to Solidtime
 - [`idgen`](https://github.com/nikbucher/idgen) — CLI tool for generating random NanoID-style identifiers
 - [`konzertmeister-cli`](https://github.com/nikbucher/konzertmeister-cli) — CLI for the Konzertmeister API — manage appointments for music groups
 
