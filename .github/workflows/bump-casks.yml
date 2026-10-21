@@ -1,0 +1,39 @@
+name: Bump casks
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  bump:
+    runs-on: macos-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        cask: [freetube, mark-text]
+    steps:
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@main
+
+      - name: Bump ${{ matrix.cask }} if a new version exists
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          brew tap nikbucher/tap
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cask="nikbucher/tap/${{ matrix.cask }}"
+          json=$(brew livecheck --cask --json "$cask")
+          echo "$json"
+          if [ "$(echo "$json" | jq -r '.[0].version.outdated')" != "true" ]; then
+            echo "Up to date"
+            exit 0
+          fi
+          latest=$(echo "$json" | jq -r '.[0].version.latest')
+          # --no-audit: FreeTube only publishes GitHub pre-releases, which the audit rejects
+          brew bump-cask-pr --no-fork --no-browse --no-audit --version "$latest" "$cask"

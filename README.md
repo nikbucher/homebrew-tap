@@ -29,6 +29,11 @@ brew install --cask nikbucher/tap/<name>
 ### Casks
 
 - [`audio-snip`](https://github.com/nikbucher/audio-snip) — Extract audio from video files using FFmpeg
+- [`freetube`](https://freetubeapp.io/) — YouTube player focusing on privacy
+- [`mark-text`](https://github.com/marktext/marktext) — Markdown editor
+
+`freetube` and `mark-text` are not notarized, so homebrew/cask disabled them. These casks remove the
+quarantine attribute from the installed app; versions are bumped weekly by `.github/workflows/bump-casks.yml`.
 
 ## Update / Uninstall
 
